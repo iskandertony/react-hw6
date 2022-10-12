@@ -1,0 +1,150 @@
+.main {
+  padding: 0;
+  margin: 0;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+}
+
+.img-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pic {
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.nav-sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-title {
+  padding: 0px 0px 0px 10px;
+}
+
+.nav-title-blue {
+  padding: 0px 0px 0px 10px;
+  color: rgba(58, 58, 223, 0.829);
+}
+
+.logo {
+  padding-right: 10px;
+}
+
+.nick {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.comment {
+  display: flex;
+  padding: 0px 15px;
+  flex-direction: column;
+  overflow: auto;
+  height: 200px;
+  width: 450px;
+}
+
+.comment-sub {
+  display: flex;
+  padding: 10px 0px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment-edit {
+  display: flex;
+  padding: 10px 0px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+
+.comment-title {
+  padding: 0px 0px 0px 10px;
+  width: 400px;
+}
+.like {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px;
+}
+
+.part2 {
+  display: flex;
+  border: 1px solid rgb(175, 173, 173);
+  border-radius: 5px;
+}
+
+.anticon svg {
+  font-size: 25px;
+}
+
+.anticon-heart svg {
+}
+
+.anticon-delete svg {
+  font-size: 16px;
+}
+
+.anticon-edit svg {
+  font-size: 16px;
+}
+.edit {
+  display: flex;
+}
+
+.edit-sub {
+  margin-right: 5px;
+}
+
+.footer {
+  padding: 0px 0px 0px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input {
+  border: 1px solid white;
+}
+
+.footer-days {
+  padding: 0px 0px 0px 15px;
+  font-size: 10px;
+}
+
+.hr {
+  border: 1px solid rgb(233, 231, 231);
+}
+
+.add-comment {
+  padding: 15px;
+}
+
+#red {
+  color: red;
+}
