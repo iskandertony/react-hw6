@@ -23,6 +23,11 @@ const Main = () => {
   const [comment, setComment] = useState([]);
   const [edit, setEdit] = useState(null);
   const [input, setInput] = useState("");
+  const [liked, setLiked] = useState("");
+
+
+
+
 
   const handleInput = (e) => {
     const value = e.target.value;
@@ -47,12 +52,12 @@ const Main = () => {
   };
 
   const handleLike = () => {
-    return (
-      <Space>
-        <HeartOutlined />
-      </Space>
-    );
+    liked ? setLiked("") : setLiked("liked")
+
   };
+
+
+  console.log(liked);
 
   const handleSave = (index) => {
     const array = comment.map((item, i) => {
@@ -74,7 +79,7 @@ const Main = () => {
       <div className="body">
         <div className="img-main">
           <div className="img">
-            <img src={main} alt="img"></img>
+            <img src={main} alt="img" onDoubleClick={handleLike}></img>
           </div>
         </div>
         <div className="part2">
@@ -145,7 +150,7 @@ const Main = () => {
             <div className="like">
               <div className="like-sub">
                 <Space>
-                  <HeartOutlined onClick={handleLike()} />
+                  <HeartOutlined onClick={handleLike} className={liked} />
                   <CommentOutlined />
                   <SendOutlined />
                 </Space>

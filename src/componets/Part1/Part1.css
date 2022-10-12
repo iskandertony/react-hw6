@@ -110,6 +110,16 @@
   font-size: 16px;
 }
 
+.liked svg {
+  color: red;
+}
+
+
+
+#unLiked svg {
+  color: black;
+}
+
 .anticon-edit svg {
   font-size: 16px;
 }
